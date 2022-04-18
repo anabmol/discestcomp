@@ -1,0 +1,15 @@
+---
+title: "Ana Bárbara Andrade Mól"
+image: "logo.jpg"
+links:
+  - label: GitHub
+    url: "https://github.com/anabmol"
+  - label: E-mail
+    url: "mailto:anabmolufsj@gmail.com"
+  - label: Linkedin
+    url: "https://www.linkedin.com/anabarbaramol"
+output:
+  postcards::jolla
+---
+ 
+Descrição sobre o aluno(a)!
