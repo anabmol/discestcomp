@@ -77,9 +77,27 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
  - A execução dessas funções, tendo em vista a entrada, é baseada em argumentos (dados, fórmulas, expressões, entre outros) ou argumentos padrões que já são pré-estabelecidos  na criação da função.
  - Por último, a saída é o resultado que também é um objeto, podendo ser usado como argumento de outras funções.
 
-## Comando elementares
+## Comandos elementares 
 
- - Os comandos elementares são dividos em **expressões** e **atribuições**
+ - **Console** : Tela de inserir e visualizar os comandos 
+ - **Prompt de comando** : Símbolo ">", que nos diz: "pronto, pode inserir os comandos!" 
  
+ - Os comandos elementares são divididos em dois tipos: **Expressões** e **Atribuições**
+ 
+   - **Expressões**: São qualquer linha de comando em que o R avalia a informação, processa e dá o resultado, o qual não é recuperado. 
+   
+      ` > 20 + 8 `
+      
+      `[1] 28 `
+       
+   - **Atribuições**: Ela associa um nome à um objeto e essa informação pode ser recuperada.
+      
+      ` > meu_nome <- "Ana Bárbara" `
+      
+      *Para imprimir o resultado da expressão, digitamos o nome*
+      *"meu_nome" no console e apertamos o botão ENTER do teclado !*
+      
+      `[1] Ana Bárbara`
+      
 
 
