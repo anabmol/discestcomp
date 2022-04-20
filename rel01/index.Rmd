@@ -57,9 +57,9 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
 
  - Interface 
  
-   - [Interface do R](C:\Users\molan\OneDrive\Área de Trabalho\EstComput)
+   - [Interface do R](C:\Users\molan\OneDrive\Área de Trabalho\EstComput\discestcomp\rel01)
   
-   - [Interface do RStudio](C:\Users\molan\OneDrive\Área de Trabalho\EstComput)
+   - [Interface do RStudio](C:\Users\molan\OneDrive\Área de Trabalho\EstComput\discestcomp\rel01)
  
  - Vantagens e desvantagens 
    
