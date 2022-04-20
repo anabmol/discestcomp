@@ -40,7 +40,7 @@ Descrever as ideias básicas sobre o ambiente R:
  - Manipulação com objetos;
  - Importação de dados;
  - Pacotes:
-   - Intslação;
+   - Instalação;
    - Como usar.
  
 
@@ -50,5 +50,36 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
 
 ## Como instalar o R e RStudio
 
+ - [Instalação do R](https://cran.r-project.org/bin/windows/base/)
+ - [Instalação do RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+
+## Diferenças entre o R e a IDE RStudio
+
+ - Interface 
+ 
+   - [Interface do R](C:\Users\molan\OneDrive\Área de Trabalho\EstComput)
+  
+   - [Interface do RStudio](C:\Users\molan\OneDrive\Área de Trabalho\EstComput)
+ 
+ - Vantagens e desvantagens 
+   
+   - No ambiente R os usuários podem vir a ter problemas ao utiliza-lo, uma vez que as janelas gráficas, janelas de scrip, entre outras se sobrepõem. Já no RStudio, há em sua interface 4 quadrantes que possibilitam a visualização de todo o trabalho, tornando-o mais organizado.
+   
+## Como o R trabalha 
+ 
+ - Três princípios do R 
+ 
+   - **Princípio do objeto** : Tudo que existe em R é um objeto 
+   - **Princípio da função** : Tudo que acontece no R é uma chamada de função
+   - **Princípio da interface** : Interfaces para outros programas são parte do R
+ 
+ - Ao trabalhar no ambiente R, toda ação feita é uma chamada de função (Operadores e funções), a qual é armazenada na forma de um objeto e assim associada à um nome.
+ - A execução dessas funções, tendo em vista a entrada, é baseada em argumentos (dados, fórmulas, expressões, entre outros) ou argumentos padrões que já são pré-estabelecidos  na criação da função.
+ - Por último, a saída é o resultado que também é um objeto, podendo ser usado como argumento de outras funções.
+
+## Comando elementares
+
+
+ 
 
 
