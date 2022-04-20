@@ -69,9 +69,9 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
  
  - Três princípios do R 
  
-   - **Princípio do objeto** : Tudo que existe em R é um objeto 
-   - **Princípio da função** : Tudo que acontece no R é uma chamada de função
-   - **Princípio da interface** : Interfaces para outros programas são parte do R
+   - **Princípio do objeto**: Tudo que existe em R é um objeto. 
+   - **Princípio da função**: Tudo que acontece no R é uma chamada de função.
+   - **Princípio da interface**: Interfaces para outros programas são parte do R.
  
  - Ao trabalhar no ambiente R, toda ação feita é uma chamada de função (Operadores e funções), a qual é armazenada na forma de um objeto e assim associada à um nome.
  - A execução dessas funções, tendo em vista a entrada, é baseada em argumentos (dados, fórmulas, expressões, entre outros) ou argumentos padrões que já são pré-estabelecidos  na criação da função.
@@ -79,7 +79,7 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
 
 ## Comandos elementares 
 
- - **Console** : Tela de inserir e visualizar os comandos 
+ - **Console** : Tela de inserir e visualizar os comandos. 
  - **Prompt de comando** : Símbolo ">", que nos diz: "pronto, pode inserir os comandos!" 
  
  - Os comandos elementares são divididos em dois tipos: **Expressões** e **Atribuições**
@@ -95,9 +95,20 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
       ` > meu_nome <- "Ana Bárbara" `
       
       *Para imprimir o resultado da expressão, digitamos o nome*
-      *"meu_nome" no console e apertamos o botão ENTER do teclado !*
+      *"meu_nome" no console e apertamos o botão ENTER do teclado!*
       
       `[1] Ana Bárbara`
+
+## Objetos 
+
+ - De acordo com John Chambers,tudo que existe em R é um objeto (Princípio 2).
+ - Um objeto dentro do ambiente R além de armazenar informações específicas, ele possui características próprias quanto à sua estrutura e conteúdos.
+   
+   - **Atributos**: Definem as estruturas e comportamentos 
+   - **Atributos intrísecos**: 
+       - **Modo**: É a característica que existe nos elementos do objeto (funções,valores,entre outros).
+       - **Comprimento**: é o número de elementos que há dentro do objeto.
+   
       
 
 
