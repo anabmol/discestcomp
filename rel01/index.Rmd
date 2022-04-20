@@ -79,7 +79,7 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
 
 ## Comando elementares
 
-
+ - Os comandos elementares são dividos em **expressões** e **atribuições**
  
 
 
