@@ -57,9 +57,9 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
 
  - Interface 
  
-   - [Interface do R](C:\Users\molan\OneDrive\Área de Trabalho\EstComput\discestcomp\rel01)
+   - [Interface do R](interfacedor.jpg)
   
-   - [Interface do RStudio](C:\Users\molan\OneDrive\Área de Trabalho\EstComput\discestcomp\rel01)
+   - [Interface do RStudio](interfacedorstudio.jpg)
  
  - Vantagens e desvantagens 
    
@@ -107,7 +107,13 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
    - **Atributos**: Definem as estruturas e comportamentos 
    - **Atributos intrísecos**: 
        - **Modo**: É a característica que existe nos elementos do objeto (funções,valores,entre outros).
+       
+         - **mode ()** baseado na linguagem **S** e 
+         - **typeof ()** baseado na linguagem **C**
+         
        - **Comprimento**: é o número de elementos que há dentro do objeto.
+         
+         - **lenght ()**
    
       
 
