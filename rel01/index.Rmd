@@ -55,13 +55,13 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
 
 ## Diferenças entre o R e a IDE RStudio
 
- - Interface 
+ - **Interface** 
  
-   - [Interface do R](interfacedor.jpg)
+   ![Interface do R](interfacedor.jpg)
   
-   - [Interface do RStudio](interfacedorstudio.jpg)
+   ![Interface do RStudio](interfacedorstudio.jpg)
  
- - Vantagens e desvantagens 
+ - **Vantagens e desvantagens** 
    
    - No ambiente R os usuários podem vir a ter problemas ao utiliza-lo, uma vez que as janelas gráficas, janelas de scrip, entre outras se sobrepõem. Já no RStudio, há em sua interface 4 quadrantes que possibilitam a visualização de todo o trabalho, tornando-o mais organizado.
    
@@ -106,14 +106,37 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
    
    - **Atributos**: Definem as estruturas e comportamentos 
    - **Atributos intrísecos**: 
-       - **Modo**: É a característica que existe nos elementos do objeto (funções,valores,entre outros).
+     - **Modo**: É a característica que existe nos elementos do objeto (funções,valores,entre outros).
        
-         - **mode ()** baseado na linguagem **S** e 
-         - **typeof ()** baseado na linguagem **C**
-         
-       - **Comprimento**: é o número de elementos que há dentro do objeto.
-         
-         - **lenght ()**
+         - Funções usadas para determinar o modo de um objeto:
+           - **mode()**: Linguagem **S**
+           - **typeof()**: Linguagem **C**
+          
+     - **Comprimento**: é o número de elementos que há dentro do objeto.
+         - Função usada para determinar o comprimento do objeto:
+           - **lenght()**
+
+ - **Tipos de objetos**: Determina a estrutura de como os dados estão organizados em um objeto, relacionado aos seus atributos.Estão subdivididos em dois:
+   
+   - **Vetores atômicos**: 
+     - Lógicos,Numéricos e Caracteres
+     - Matrizes unidiemnsionais (*Matrix*) e multidimensionais (*Arrays*)
+     
+  - **Vetores em listas**:
+     - Listas (*Lists*)
+     - Quadro de dados (*Date frames*)
+     
+ 
+   
+   
+           
+           
+           
+           
+           
+## Manipulação com objetos
+
+
    
       
 
