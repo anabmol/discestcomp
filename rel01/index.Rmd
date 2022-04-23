@@ -145,24 +145,47 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
      
      vetor.num <- c(1, 2, 3, 4, 5); vetor.num
      
-    [1] 1 2 3 4 5
-    
-    **Manipulando vetores**
-    
-       - **Aritmética e outras operações**
-      
-       - **Operadores lógicos**
-      
-       - **Operadores booleanos**
-    
-    **Matrizes bidimensionais**
-    
-    **Matriz multidimensional**
-     
+     [1] (1, 2, 3, 4, 5)
+   
   - **Vetores em listas**:
      - Listas (*Lists*)
      - Quadro de dados (*Date frames*)
+     
+## **Importando dados**
 
+  - **Ideias básicas**:
+    - Escrever um banco de dados 
+    - No R:
+      - Verificar diretório de trabalho 
+      - Importar os dados usando **read.tabel()**
+      - Criar um nome e associar ao objeto de classe **data.frame** com os dados importados
+    - No RStudio tem alguns recursos que podem facilitar a importação de dados.
+    
+      - **Passo 1**:
+      ![](passo1importandodados.jpg)
+      
+      - **Passo 2**: Escolher o arquivo para leitura de dados.
+      ![](passo2importandodados.jpg)
+      
+      - **Passo 3**: Configurar a leitura de banco de dados. Assim, deverá digitar o nome associado ao objeto (*Name*) que será criado do tipo quadro de dados (*data frame*) e clicar no botão *Import*.
+      ![](passo3importandodados.jpg)
+      
+      - **Passso 4**: Após inserido, o RStudio apresenta a linha de comando utilizada para importar os dados no console (2º quadrante), o conjunto de dados (1º quadrante), e a ligação entre o nome e o obejto no ambiente global (3º quadrante).
+      ![](passo4importandodados.jpg) 
+      
+      
+      
+      
+      
+      
+      
+    
+      
+
+
+
+     
+    
 
 
    
