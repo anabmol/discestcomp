@@ -115,26 +115,54 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
      - **Comprimento**: é o número de elementos que há dentro do objeto.
          - Função usada para determinar o comprimento do objeto:
            - **lenght()**
+           
+## Manipulação com objetos
 
- - **Tipos de objetos**: Determina a estrutura de como os dados estão organizados em um objeto, relacionado aos seus atributos.Estão subdivididos em dois:
+- **Tipos de objetos**: Determina a estrutura de como os dados estão organizados em um objeto relacionado aos seus atributos.Estão subdivididos em dois:
+
+  **Vetores**
    
    - **Vetores atômicos**: 
      - Lógicos,Numéricos e Caracteres
      - Matrizes unidiemnsionais (*Matrix*) e multidimensionais (*Arrays*)
      
+       - **Numéricos** (numerico):
+         - Inteiro (integer)
+         - Real (double)
+       - **Lógico** (logical)
+       - **Caractere** (character)
+       
+     **Escalares**: O menor comprimento de um vetor é de tamamanho um, conhecido também como um escalar. Porém, para o R tudo é observado como um vetor.
+       
+       - Os vetores lógicos assumem valores: TRUE ou FALSE
+       - Os vetores numéricos do tipo double podem ser representados na forma decimal (0.254), científica (1.54e3), ou hexadecimal (2F0G)
+       - Os vetores numéricos do tipo integer são representados pela letra L ao final do núemro inteiro , isto é (3L, 1.54e3L, etc.)
+       - Os caracteres são representados pelas palavras, letras, números ou caracteres especiais entre aspas, isto é, "Ana Bárbara", "b". Pode ser utilizado também aspas simpels, 'Ana Bárbara', 'b', etc.
+    
+     **Vetores longos**: Os vetores longos podem ser criados pela função c(), inicial de concatenar,ou seja, agrupar.
+     
+     #Criando um vetor 'double'
+     
+     vetor.num <- c(1, 2, 3, 4, 5); vetor.num
+     
+    [1] 1 2 3 4 5
+    
+    **Manipulando vetores**
+    
+       - **Aritmética e outras operações**
+      
+       - **Operadores lógicos**
+      
+       - **Operadores booleanos**
+    
+    **Matrizes bidimensionais**
+    
+    **Matriz multidimensional**
+     
   - **Vetores em listas**:
      - Listas (*Lists*)
      - Quadro de dados (*Date frames*)
-     
- 
-   
-   
-           
-           
-           
-           
-           
-## Manipulação com objetos
+
 
 
    
