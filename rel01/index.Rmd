@@ -151,7 +151,7 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
      - Listas (*Lists*)
      - Quadro de dados (*Date frames*)
      
-## **Importando dados**
+## Importando dados
 
   - **Ideias básicas**:
     - Escrever um banco de dados 
@@ -171,7 +171,25 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
       ![](passo3importandodados.jpg)
       
       - **Passso 4**: Após inserido, o RStudio apresenta a linha de comando utilizada para importar os dados no console (2º quadrante), o conjunto de dados (1º quadrante), e a ligação entre o nome e o obejto no ambiente global (3º quadrante).
-      ![](passo4importandodados.jpg) 
+      ![](passo4importandodados.jpg)
+
+## Pacotes
+
+  - **Instalação**:
+ 
+    - A instalação de um pacote via CRAN pode ser feita pela função:
+    install.packages(pkgs = "nome_pacote")
+    - Para baixar o pacote fonte na internet, basta usar a url: http://cran.r-project.org/package=midrangeMCP. Para qualquer outro pacote, basta mudar o nome do pacote na url
+    - O pacote fonte é compactado com a extensão .tar.gz 
+    - Outra maneira é baixar o arquivo do pacote fonte no seu computador e instalá-lo.
+  
+  - **Como usar**:
+  
+    - Após a instalação do pacote, é necessário carregar e anexa-lo, para que seja possível a utilização dos recursos disponíveis nele, como funções, dados, etc.Sendo assim, isso significa disponibilizar na memória e inseri-lo no caminho de busca.Para isso, deve-se usar as funções library() ou require().
+    - Para acessar uma função de um pacote após ter sido carregado, usa-se o operador ::,ou seja, nome_pacote::nome_função.Isto significa, que será chamado a função necessária sem anexar o pacote no caminho de busca.
+      - **Caminho de busca**: Objetos que armazenam, em forma de lista, nomes associados a objetos. A função para ver o caminho de busca é search().
+  
+
       
       
       
