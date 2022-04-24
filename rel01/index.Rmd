@@ -57,9 +57,9 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
 
  - **Interface** 
  
-   ![Interface do R](interfacedor.jpg){width="80%"}
+   ![Interface do R](interfacedor.jpg){width="70%"}
   
-   ![Interface do RStudio](interfacedorstudio.jpg){width="80%"}
+   ![Interface do RStudio](interfacedorstudio.jpg){width="70%"}
  
  - **Vantagens e desvantagens** 
    
@@ -162,16 +162,16 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
     - No RStudio tem alguns recursos que podem facilitar a importação de dados.
     
       - **Passo 1**:
-      ![](passo1importandodados.jpg)
+      ![](passo1importandodados.jpg){width="70%"}
       
       - **Passo 2**: Escolher o arquivo para leitura de dados.
-      ![](passo2importandodados.jpg)
+      ![](passo2importandodados.jpg){width="70%"}
       
       - **Passo 3**: Configurar a leitura de banco de dados. Assim, deverá digitar o nome associado ao objeto (*Name*) que será criado do tipo quadro de dados (*data frame*) e clicar no botão *Import*.
-      ![](passo3importandodados.jpg)
+      ![](passo3importandodados.jpg){width="70%"}
       
       - **Passso 4**: Após inserido, o RStudio apresenta a linha de comando utilizada para importar os dados no console (2º quadrante), o conjunto de dados (1º quadrante), e a ligação entre o nome e o obejto no ambiente global (3º quadrante).
-      ![](passo4importandodados.jpg){width="80%"}
+      ![](passo4importandodados.jpg){width="70%"}
 
 ## Pacotes
 
