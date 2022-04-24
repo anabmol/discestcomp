@@ -161,8 +161,9 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
       - Criar um nome e associar ao objeto de classe **data.frame** com os dados importados
     - No RStudio tem alguns recursos que podem facilitar a importação de dados.
     
-      - **Passo 1**:
-      ![](passo1importandodados.jpg){width="70%"}
+      - **Passo 1**: 
+      
+        ![](passo1importandodados.jpg){width="70%"}
       
       - **Passo 2**: Escolher o arquivo para leitura de dados.
       ![](passo2importandodados.jpg){width="70%"}
