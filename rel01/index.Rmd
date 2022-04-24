@@ -57,9 +57,9 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
 
  - **Interface** 
  
-   ![Interface do R](interfacedor.jpg)
+   ![Interface do R](interfacedor.jpg){width="80%"}
   
-   ![Interface do RStudio](interfacedorstudio.jpg)
+   ![Interface do RStudio](interfacedorstudio.jpg){width="80%"}
  
  - **Vantagens e desvantagens** 
    
@@ -171,7 +171,7 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
       ![](passo3importandodados.jpg)
       
       - **Passso 4**: Após inserido, o RStudio apresenta a linha de comando utilizada para importar os dados no console (2º quadrante), o conjunto de dados (1º quadrante), e a ligação entre o nome e o obejto no ambiente global (3º quadrante).
-      ![](passo4importandodados.jpg)
+      ![](passo4importandodados.jpg){width="80%"}
 
 ## Pacotes
 
