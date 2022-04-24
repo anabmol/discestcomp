@@ -137,7 +137,7 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
        - Os vetores lógicos assumem valores: TRUE ou FALSE
        - Os vetores numéricos do tipo double podem ser representados na forma decimal (0.254), científica (1.54e3), ou hexadecimal (2F0G)
        - Os vetores numéricos do tipo integer são representados pela letra L ao final do núemro inteiro , isto é (3L, 1.54e3L, etc.)
-       - Os caracteres são representados pelas palavras, letras, números ou caracteres especiais entre aspas, isto é, "Ana Bárbara", "b". Pode ser utilizado também aspas simpels, 'Ana Bárbara', 'b', etc.
+       - Os caracteres são representados pelas palavras, letras, números ou caracteres especiais entre aspas, isto é, "Ana Bárbara", "b". Pode ser utilizado também aspas simples, 'Ana Bárbara', 'b', etc.
     
      **Vetores longos**: Os vetores longos podem ser criados pela função c(), inicial de concatenar,ou seja, agrupar.
      
