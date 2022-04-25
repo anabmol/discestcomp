@@ -151,6 +151,13 @@ Diante do objetivo do relatório apresentaremos nas próximas subseções, os po
      - Listas (*Lists*)
      - Quadro de dados (*Date frames*)
      
+       - **Listas de dados**: As listas são como vetores atômicos, porém mais complexos, ou seja, os elementos além de serem vetores atômicos, são como outras listas, funções,expressões, chamados de objetos recursivos.Para se obter uma lista, deve-se usara  função "list()".
+       
+       - **Quadro de dados**: É uma lista com classe *data.frame*, em que contém dois atributos.Entretanto, há algumas restrições:
+         - Os componentes devem ser uni ou multidimensionais, listas ou quadro de dados
+         - As colunas das matrizes, listas ou quadro de dados são inseridas como colunas do quadro de dados
+         - Os objetos inseridos no quadro de dados devem possuir o mesmo comprimento.
+     
 ## Importando dados
 
   - **Ideias básicas**:
