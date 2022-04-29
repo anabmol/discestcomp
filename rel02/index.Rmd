@@ -64,9 +64,18 @@ Passos para a realização do relatório.
   
   - **Passo 2:**
   Crie um repositório com o nome: <nome_github>github.io, e caso ja exista com esse nome, use "discestcomp".
+  
+  <center>
+  
+  ![Criando repositório](criandorepositorio.png){width=70%}</center>
+  
  
   - **Passo 3 :** 
   Após a criação do repositório no GitHub, vá em *Code* e copie o HTTPS.
+  
+  <center>
+  
+  ![Copiando Code HTML](copiandocodehtml.png){width=70%}</center>
   
   - **Passo 4:**
   Agora deverá clonar o repositório ao Rstudio. Para isto, basta acessar: 
@@ -96,6 +105,12 @@ Passos para a realização do relatório.
   
   - Para que essas mudanças sejam enviadas para o repositório GitHub, deverá dar um *Commit* e logo em seguida dar o *Push*. Feito isso, as alterações também irão ser feitas no repositório. 
   
+  <center>
+  
+  ![Commitando](commit.jpg.png){width=70%}</center>
+   <center>
+  
+  ![Commitando e dando push](commitpush.png){width=70%}</center>
 ### Via Terminal 
 
   - Para que as alterações sejam enviadas de maneira mais rápida e eficiente, esta poderá ser feita através do terminal, localizado no segundo quadrante e deverá seguir os seguintes passos:
