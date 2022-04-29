@@ -473,7 +473,8 @@ Repositório</a>
 <li><a href="#clonando-o-repositório-do-github-ao-rstudio"><span class="toc-section-number">2.2.1</span> Clonando o repositório do GitHub
 ao RStudio</a></li>
 </ul></li>
-<li><a href="#instalação-dos-pacotes"><span class="toc-section-number">2.3</span> Instalação dos pacotes</a></li>
+<li><a href="#uso-dos-pacotes-já-instalados"><span class="toc-section-number">2.3</span> Uso dos pacotes já
+instalados</a></li>
 <li><a href="#rmarkdown"><span class="toc-section-number">2.4</span>
 RMarkdown</a></li>
 <li><a href="#comentando-as-alterações-e-subindo-para-o-github"><span class="toc-section-number">2.5</span> Comentando as alterações e subindo
@@ -563,12 +564,31 @@ of</em></li>
 </ul>
 </div>
 </div>
-<div id="instalação-dos-pacotes" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Instalação dos
-pacotes</h2>
+<div id="uso-dos-pacotes-já-instalados" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Uso dos pacotes já
+instalados</h2>
+<ul>
+<li><p>Os pacotes instalados serão utilizados nos momentos de produção
+dos relatórios, cada um com suas devidas características. Eles são:</p>
+<ul>
+<li><code>rmarkdown</code>: permite a criação de textos em HTML</li>
+<li><code>knitr</code>: permite a visualização em Markdown</li>
+<li><code>tinytex</code>:habilita a compilação de documentos em LaTex e
+impressão em PDF</li>
+</ul></li>
+</ul>
 </div>
 <div id="rmarkdown" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> RMarkdown</h2>
+<ul>
+<li>O R Markdown é uma ferramenta de programação literária que combina
+com uma sintaxe de textos simples com trechos de códigos em R gerando
+arquivos em formatos HTML, PDF ou WORD.</li>
+<li>Um texto em RMarkdown pode ser criado no RStudio clicando em :
+<code>File &gt; New File &gt; R Markdown.</code></li>
+<li>Para gerar um arquivo em HTML, basta clicar no botão
+<code>knit HTML</code></li>
+</ul>
 </div>
 <div id="comentando-as-alterações-e-subindo-para-o-github" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Comentando as
@@ -576,8 +596,9 @@ alterações e subindo para o GitHub</h2>
 <div id="via-git" class="section level3" number="2.5.1">
 <h3><span class="header-section-number">2.5.1</span> Via Git</h3>
 <ul>
-<li><p>No 3º quadrante, clicando em <em>Git</em>, aparecerá o seguinte
-visual que irá indicar uma alteração feita em seu relatório.</p></li>
+<li><p>No terceiro quadrante, clicando em <em>Git</em>, aparecerá o
+seguinte visual que irá indicar uma alteração feita em seu
+relatório.</p></li>
 <li><p>Para que essas mudanças sejam enviadas para o repositório GitHub,
 deverá dar um <em>Commit</em> e logo em seguida dar o <em>Push</em>.
 Feito isso, as alterações também irão ser feitas no
@@ -588,8 +609,8 @@ repositório.</p></li>
 <h3><span class="header-section-number">2.5.2</span> Via Terminal</h3>
 <ul>
 <li>Para que as alterações sejam enviadas de maneira mais rápida e
-eficiente, esta poderá ser feita através do terminal, localizado no 2º
-quadrante e deverá seguir os seguintes passos:</li>
+eficiente, esta poderá ser feita através do terminal, localizado no
+segundo quadrante e deverá seguir os seguintes passos:</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>$ git add .</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  </span>
@@ -603,8 +624,9 @@ quadrante e deverá seguir os seguintes passos:</li>
 disponibilizado via online</h2>
 <ul>
 <li>O projeto no repositório poderá ser acessado via internet.</li>
-<li>Para isso, o arquivo rmd deverá ser compilado em HTML, clicando em
-<em>Knit to HTML</em></li>
+<li>Para isso, o arquivo rmd deverá ser compilado salvo com o nome
+específico de <code>index</code> e compilado em HTML, clicando em
+<em>Knit to HTML</em> no primeiro quadrante.</li>
 <li>Feito isso, deverá acessar a página do GitHub e clicar em
 <em>Settings</em> &gt; <em>Pages</em> &gt; em <em>Source</em>, escolha a
 opção <em>main root</em> &gt; <em>Save</em></li>
