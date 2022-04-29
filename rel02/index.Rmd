@@ -97,3 +97,11 @@ $ git commit -m "escrever a informação que foi alterada"
 $ git push 
 
 ```
+## Repositório sendo disponibilizado via online
+
+  - O projeto no repositório  poderá ser acessado via internet. 
+  - Para isso, o arquivo rmd deverá ser compilado em HTML, clicando em *Knit to HTML* 
+  - Feito isso, deverá acessar a página do GitHub e clicar em *Settings* > *Pages* > em *Source*, escolha a opção *main root* > *Save*
+  - Dessa forma, após alguns minutos, a página estará disponível.
+  
+  
