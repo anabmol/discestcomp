@@ -95,6 +95,18 @@ Passos para a realização do relatório.
   - O R Markdown é uma ferramenta de programação literária que combina com uma sintaxe de textos simples com trechos de códigos em R gerando arquivos em formatos HTML, PDF ou WORD. 
   - Um texto em RMarkdown pode ser criado no RStudio clicando em : `File > New File > R Markdown.`
   - Para gerar um arquivo em HTML, basta clicar no botão `knit HTML`
+
+### Escrita no Markdown
+
+  - Em seguida será apresentado alguns comandos mais usados ao escrever um texto no Markdown:
+    
+    - Escrever em negrito: (`**negrito**` ou `__negerito__`) **Negrito**
+    - Escrever em itálico: (`*itálico*`) *Itálico*
+    - Inserindo links: (`[Nome do link](link)`) [Link](https://bendeivide.github.io/slides/estcomp/s06/)
+    - Inserindo imagem reduzida: (`![Nome da imagem](local da imagem){width="50%"}`) ![Imagem](ambienter.png){width=30%}
+    - Escrevendo título: (`##Título`)
+    - Escrevendo subtítulo: (`###Subtítulo`)
+    
   
 
 ## Comentando as alterações e subindo para o GitHub 
@@ -130,4 +142,7 @@ $ git push
   - Feito isso, deverá acessar a página do GitHub e clicar em *Settings* > *Pages* > em *Source*, escolha a opção *main root* > *Save*
   - Dessa forma, após alguns minutos, a página estará disponível.
   
+  <center>
+  
+  ![Criando repositório online](criandorepositorioonline.png){width=70%}</center>
   
