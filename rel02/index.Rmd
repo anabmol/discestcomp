@@ -55,7 +55,7 @@ Passos para a realização do relatório.
 
   - Um repositório contém todos os arquivos do projeto e o histórico de revisão de cada arquivo. Local onde é possível gerenciar o trabalho do projeto dentro do repositório.
 
-**Clonando o repositório do GitHub ao RStudio:**
+### Clonando o repositório do GitHub ao RStudio
 
   - Segue os passos: 
   
@@ -73,7 +73,27 @@ Passos para a realização do relatório.
     - File > New Project… > Version Control > Git > Repository URL > insira o https do repositório Git
     - Escolha em seu computador um diretório em que será salvo o repositório, clicando em: *Create project as subdirectory of*
   
+## Instalação dos pacotes 
+
+## RMarkdown 
+
+## Comentando as alterações e subindo para o GitHub 
+
+### Via Git 
+
+  - No 3º quadrante, clicando em *Git*, aparecerá o seguinte visual que irá indicar uma alteração feita em seu relatório.
   
+  - Para que essas mudanças sejam enviadas para o repositório GitHub, deverá dar um *Commit* e logo em seguida dar o *Push*. Feito isso, as alterações também irão ser feitas no repositório. 
+  
+### Via Terminal 
 
+  - Para que as alterações sejam enviadas de maneira mais rápida e eficiente, esta poderá ser feita através do terminal, localizado no 2º quadrante e deverá seguir os seguintes passos:
+  
+```markdown 
+$ git add .
+  
+$ git commit -m "escrever a informação que foi alterada"
+  
+$ git push 
 
-
+```
