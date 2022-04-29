@@ -103,7 +103,8 @@ Passos para a realização do relatório.
     - Escrever em negrito: (`**negrito**` ou `__negerito__`) **Negrito**
     - Escrever em itálico: (`*itálico*`) *Itálico*
     - Inserindo links: (`[Nome do link](link)`) [Link](https://bendeivide.github.io/slides/estcomp/s06/)
-    - Inserindo imagem reduzida: (`![Nome da imagem](local da imagem){width="50%"}`) ![Imagem](ambienter.png){width=30%}
+    - Inserindo imagem reduzida: (`![Nome da imagem](local da imagem){width="50%"}`)
+    ![Imagem](ambienter.png){width=30%}
     - Escrevendo título: (`##Título`)
     - Escrevendo subtítulo: (`###Subtítulo`)
     
