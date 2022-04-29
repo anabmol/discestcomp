@@ -30,9 +30,50 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Objetivo
 
-Descrever como realizar os relatórios.
+Descrição de como escrever o relatório.
 
 # Apresentação do relatório
 
-Aqui será o local para apresentar o material sobre o relatório.
+Passos para a realização do relatório.
+
+## Uso do Git
+
+### Definição e características
+
+  - Git é o sistema de controle de versão open source mais usado no mundo atualmente. Ele é usado para controlar o histórico de alterações de arquivos e principalmente de projetos de desenvolvimento de software. Ele permite mais flexibilidade no fluxo de trabalho, segurança e desempenho. 
+  - O Git pode ser usado em todo e qualquer projeto que tenha arquivos de diferentes tipos, podendo ser código, texto, imagens, vídeos, áudios, entre outros.
+  
+### Instalação do Git 
+
+  - O software Git pode ser baixado através do link:  [Git](https://git-scm.com/downloads)
+
+### Criação de conta no GitHub
+
+  - É necessária a criação de uma conta no GitHub para que em seguida criemos um repositório onde será alocado os relatórios. Para isso, basta acessar o link [Login GitHub](https://github.com/login)
+  
+## Repositório 
+
+  - Um repositório contém todos os arquivos do projeto e o histórico de revisão de cada arquivo. Local onde é possível gerenciar o trabalho do projeto dentro do repositório.
+
+**Clonando o repositório do GitHub ao RStudio:**
+
+  - Segue os passos: 
+  
+  - **Passo 1:**
+  RStudio > Tools > Global Options > Terminal > General > Shell > New Terminal open with: Git Bash.
+  
+  - **Passo 2:**
+  Crie um repositório com o nome: <nome_github>github.io, e caso ja exista com esse nome, use "discestcomp".
+ 
+  - **Passo 3 :** 
+  Após a criação do repositório no GitHub, vá em *Code* e copie o HTTPS.
+  
+  - **Passo 4:**
+  Agora deverá clonar o repositório ao Rstudio. Para isto, basta acessar: 
+    - File > New Project… > Version Control > Git > Repository URL > insira o https do repositório Git
+    - Escolha em seu computador um diretório em que será salvo o repositório, clicando em: *Create project as subdirectory of*
+  
+  
+
+
 
