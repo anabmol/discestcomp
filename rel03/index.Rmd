@@ -1,38 +1,51 @@
 ---
-title: "Relatório 03"
-author: "Ben Dêivide"
-date: "12/04/2022"
-header-includes:
-  - \usepackage{titling}
-  - \pretitle{\begin{center}
-    \includegraphics[width=2in,height=2in]{ufsj.png}\LARGE\\}
-  - \posttitle{\end{center}}
-toc-title: "Sumário"
-output:
-  
-  html_document:
-    theme: journal
-    highlight: tango
-    toc: yes
-    number_sections: yes
-    includes:
-      in_header: logo.html
-  pdf_document:
-    
-    toc: yes
-    number_sections: yes
+title: "Distribuição de probabilidade"
+author: "Ana Bárbara Mól"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
---- 
 
-# Objetivo
 
-Descrever o objetivo do relatório!
+## Objetivos
 
-# Apresentação do relatório
 
-Aqui será o local para apresentar o material sobre o relatório.
+
+## Introdução
+
+### **Probabilidade** 
+
+  É o estudo das chances de obtenção de cada resultado de um experimento aleatório. A essas chances são atribuídos os números reais do intervalo entre 0 e 1. Resultados mais próximos de 1 têm mais chances de ocorrer. Além disso, a probabilidade também pode ser apresentada na forma percentual.
+  
+### **Espaço Amostral (Ω)**
+
+  É o conjunto formado por todos os resultados possíveis de um experimento aleatório. Em outras palavras, é o conjunto formado por todos os pontos amostrais de um experimento. 
+
+## Introdução
+  
+### **Variável aleatória**
+
+  É uma variável quantitativa, cujo resultado depende de valores aleatórios. Um exemplo é o lançamento de um dado que pode resultar em qualquer número de 1 a 6.
+
+
+## Distribuições de probabilidade 
+
+  Uma distribuição de probabilidade é um modelo matemático que relaciona um certo valor da variável em estudo com a sua probabilidade de ocorrência. Há dois tipos de distribuição de probabilidade:
+  
+  - **Distribuições contínuas:** Quando a variável que está sendo medida é expressa em uma escala contínua, como no caso de uma característica dimensional. Adota sempre valores enumeráveis finitos ou infinitos 
+     - As probabilidades são específicas em termos de intervalos, pois a probabilidade associada a um núemro específico é zero.
+     
+## Distribuições de probabilidade
+
+  - **Distribuições discretas:** Quando a variável que está sendo medida só pode assumir certos valores, como por exemplo os valores inteiros: 0,1,2,etc. Adota valores não enuneráveis infinito.
+     - A pobabilidade de que a variável X assuma um valor específico x' é dada por: **P(X=x') = P(x')**
+     
+     
+  
+
+
+
 
