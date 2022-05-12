@@ -1,0 +1,103 @@
+---
+title: "Relatório 04"
+author: "Ana Bárbara Andrade Mól"
+date: "12/05/2022"
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics[width=2in,height=2in]{ufsj.png}\LARGE\\}
+  - \posttitle{\end{center}}
+toc-title: "Sumário"
+output:
+  
+  html_document:
+    theme: journal
+    highlight: tango
+    toc: yes
+    number_sections: yes
+    includes:
+      in_header: logo.html
+  pdf_document:
+    
+    toc: yes
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+--- 
+
+# Objetivo
+
+
+
+# Apresentação do relatório
+
+
+
+# Distribuição Normal (Gaussiana)
+
+  - A distribuição normal é a mais familiar das distribuições de probabilidade e também uma das mais importantes em estatística.
+  - A grande utilidade dessa distribuição (função densidade) está associada ao fato de que aproxima de forma bastante satisfatória as curvas de frequências de medidas físicas, essa curva é conhecida como **Gaussiana**.
+  - Essa distribuição possui dois parâmetros: 
+     - Média (μ): onde está centralizada
+     - Variância (σ^2): descreve o seu grau de dispersão
+     
+  - O modelo da função normal pode ser expresso da seguinte forma: 
+
+    - **Variável aleatória generalizada**
+     - Seja X uma variável aleatória contínua com média μ em que: −∞<x<∞ , e σ>0.
+  
+    -  **Função densidade de probabilidade** 
+   <center>
+   $$fx(x)=\frac{1}{\sqrt{2πσ^2}}e^\frac{-1}{2}(\frac{x-μ}{σ})^2 $$
+  - Podemos dizer que X possui uma **distribuição normal**, logo: **X ~ N(μ,σ^2)**.
+  </center>
+  
+  
+    - **Cálculo da probabilidade**
+   <center>
+   $$P (a<X<b)= \int_{a}^{b}\frac{1}{\sqrt{2πσ^2}}e^\frac{-1}{2}(\frac{x-μ}{σ})^2$$
+  </center>
+
+
+## Quadratura Gauss- Legendre 
+
+  - A quadratura gaussiana é uma integração numérica que será utilizada para calcular a probabilidade citada acima.
+  - Este método númerico consiste em apontar reusltados exatos em *s* pontos para polinômios de grau *2s-1* ou menor para uma escolha adequada dos pontos *Xi* e pesos *Wi* para *i = 1,...,n*. O domínio de integração é por convenção tomado como [-1,1], expressa em: 
+  <center> 
+  $$\int_{-1}^{1}f(x)dx≈\sum_{k=1}^{s}Wk g(Xk)$$
+  </center>
+  
+  - Em que:
+    - Xk: Nó
+    - wK: Peso da soma 
+    - fx: Função estudada
+    - g(xK): Função transformada
+   
+  - Para calcular a integral de um afunção através do método da quadratura gaussinana, segue alguns passos: 
+     1. Determinar o número de pontos *s* que se deve tomar para resolver a integral.
+     2. Determinar os nós (Xk) e os pesos (Wk) da quadratura, usando a função: 
+    <center> 
+    **SMR:::GaussLegendre(s)** 
+    </center>
+    do pacote R,SMR, sendo *s* os pontos da quadratura
+     3. Determinar f(xk) = g(xk), ou seja, a função de interesse aplicada nos nós
+     4. E por fim, calcular através da função citada acima.
+
+## Calculando a função no R através da Quadratura Gauss-Legendre
+
+  - **Exemplo:** Calculando a integral 
+  <center>
+  $$\int_{-1}^{1} (x^3-5x)dx$$
+  </center>
+```
+
+
+```markdown
+  >SMR:::GaussLegendre(2)
+  $nodes
+  [1] -0.5773503 0.5773503
+  $weights
+  [1] 1 1 1 
