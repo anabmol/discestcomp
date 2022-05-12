@@ -30,10 +30,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Objetivo
 
+O objetivo desse relatório é mostrar a distribuição normal e o cálculo da probabilidade através da Quadratura Gauss-Legendre.
 
 
 # Apresentação do relatório
 
+Será apresentado a seguir, a distribuição normal com suas respectivas funções e o passo a passo de como calcular uma integral através do método da quadratura.
 
 
 # Distribuição Normal (Gaussiana)
@@ -92,12 +94,33 @@ knitr::opts_chunk$set(echo = TRUE)
   <center>
   $$\int_{-1}^{1} (x^3-5x)dx$$
   </center>
+  
+  1. Serão necessários *s* = 2 pontos de quadratura para a resoluyção da integral
+  2. Usando o pacote SMR, temos: 
+  
 ```
-
-
-```markdown
+  
   >SMR:::GaussLegendre(2)
   $nodes
   [1] -0.5773503 0.5773503
   $weights
   [1] 1 1 1 
+
+```
+  3. Determinando:
+  <center>
+    g(x)=f(x)
+    
+    {g(x1),g(x2)} = {2,694301, -2,694301}
+  </center>
+  
+  4. Logo, calculando a integral pelo método: 
+  
+   <center> 
+  $$\int_{-1}^{1}f(x)dx≈\sum_{k=1}^{s}Wk g(Xk)$$
+  </center>
+  
+  <center>
+  $$\int_{-1}^{1} (x^3-5x)dx = 1 x (2,694301) + 1 x (-2,694301) = 0$$
+  </center>
+  

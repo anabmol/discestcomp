@@ -376,10 +376,15 @@ da Quadratura Gauss-Legendre</a></li>
 <hr />
 <div id="objetivo" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Objetivo</h1>
+<p>O objetivo desse relatório é mostrar a distribuição normal e o
+cálculo da probabilidade através da Quadratura Gauss-Legendre.</p>
 </div>
 <div id="apresentação-do-relatório" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Apresentação do
 relatório</h1>
+<p>Será apresentado a seguir, a distribuição normal com suas respectivas
+funções e o passo a passo de como calcular uma integral através do
+método da quadratura.</p>
 </div>
 <div id="distribuição-normal-gaussiana" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> Distribuição Normal
@@ -464,11 +469,38 @@ no R através da Quadratura Gauss-Legendre</h2>
 <li><strong>Exemplo:</strong> Calculando a integral
 <center>
 <span class="math display">\[\int_{-1}^{1} (x^3-5x)dx\]</span>
-</center>
-```</li>
+</center></li>
 </ul>
-<p>```markdown &gt;SMR:::GaussLegendre(2) $nodes [1] -0.5773503
-0.5773503 $weights [1] 1 1 1</p>
+<ol style="list-style-type: decimal">
+<li>Serão necessários <em>s</em> = 2 pontos de quadratura para a
+resoluyção da integral</li>
+<li>Usando o pacote SMR, temos:</li>
+</ol>
+<pre><code>  
+  &gt;SMR:::GaussLegendre(2)
+  $nodes
+  [1] -0.5773503 0.5773503
+  $weights
+  [1] 1 1 1 
+</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Determinando:
+<center>
+g(x)=f(x)</li>
+</ol>
+<pre><code>{g(x1),g(x2)} = {2,694301, -2,694301}</code></pre>
+</center>
+<ol start="4" style="list-style-type: decimal">
+<li>Logo, calculando a integral pelo método:</li>
+</ol>
+<center>
+<span class="math display">\[\int_{-1}^{1}f(x)dx≈\sum_{k=1}^{s}Wk
+g(Xk)\]</span>
+</center>
+<center>
+<span class="math display">\[\int_{-1}^{1} (x^3-5x)dx = 1 x (2,694301) +
+1 x (-2,694301) = 0\]</span>
+</center>
 </div>
 </div>
 
