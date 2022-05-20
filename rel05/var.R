@@ -1,36 +1,40 @@
 # Cálculo da variância utilizando o leem.
 
-# Tabela em distribuição de frequências 
-# @export
-tabfreq <- function(dados, k = NULL, ordered = NULL){
-  if (class(dados) != "leem") stop("Use the 'new_leem()' function to create an object of class leem")
-  if (attr(dados, "variable") = "continuous") {
-    # numeric ou character
-    numchar <- is.numeric(dados)
-    # tamanho da amostra 
-    n <- length(dados)
-    # Distribuição de frequência
-    aux <- table(dados)
-    if (numchar){
-      groups <- as.numeric(names(aux))
-    } else {
-      if (is.null(ordered)) {
-        groups <- as.numeric(names(aux))}
-    } else {
-      pos <- match (as.character(names(aux)), ordered)
+variance <- function(x, rounding = 2, na.rm = FALSE, details = FALSE) {
+  if (class(x) != "leem") stop("Use the 'new_leem()' function to create an object of class leem!", call. = FALSE)
+  if (class(x) == "leem" & is.null(attr(x, "table"))) x <- tabfreq(x)
+  if (attr(x, "variable") == "discrete") {
+    numchar <- is.numeric(x$estat$raw_data)
+    if (numchar) {
+      vari <- round(var(x = x$estat$raw_data,
+                        na.rm = na.rm), digits = rounding)
+      resume <- list(variance = variance, table = x$tabela, rawdata = x$estat$raw_data)
+      if (details) {
+        return(resume)
+      } else {
+        return(variance)
       }
+      
+    } else {
+      stop("Measure not used for this data type!", call. = FALSE,
+           domain = "R-leem")
     }
   }
+  if (attr(x, "variable") == "continuous") {
+    vari <- sum((x$tabela$Fi - mean(x))^2/(x$estat$raw_data - 1))
+    return(vari)
+  }
+    
+}
 
-# Encontrando a variância 
-library(leem)
 set.seed(10)
 x <- rnorm(36, 100, 50)
-x <- new_leem(variable ="continuous") 
-tab <- tabfreq(x)
-tab$tabela$PM
-tab$tabela$Fi
-sum(tab$tabela$Fi*tab$tabela$PM)
-var(x)  
+x <- new_leem(x, variable = 2)
+variance(x)
+
+
+
+
+
 
 
