@@ -132,6 +132,6 @@ Relatórios desenvolvidos:
 - [Relatório 03 (04/05/2022)](rel03/index.html){target="_blank"}
 - [Relatório 04 (12/05/2022)](rel04/index.html){target="_blank"}
 - Relatório 05 
-  - [var.R](rel05/var.R){target="_blank"}
+  - [var.R](rel05/var.R)
   
 - ...
