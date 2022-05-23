@@ -133,5 +133,4 @@ Relatórios desenvolvidos:
 - [Relatório 04 (12/05/2022)](rel04/index.html){target="_blank"}
 - Relatório 05 
   - [var.R](rel05/var.R)
-  
 - ...
