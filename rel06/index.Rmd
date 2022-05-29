@@ -1,0 +1,145 @@
+---
+title: "Relatório 06"
+author: "Ana Bárbara Andrade Mól"
+date: "29/05/2022"
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics[width=2in,height=2in]{ufsj.png}\LARGE\\}
+  - \posttitle{\end{center}}
+toc-title: "Sumário"
+output:
+  
+  html_document:
+    theme: journal
+    highlight: tango
+    toc: yes
+    number_sections: yes
+    includes:
+      in_header: logo.html
+  pdf_document:
+    
+    toc: yes
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+--- 
+
+# Objetivo
+
+Função variância no R utilizando o pacote  `Leem` .
+
+# Apresentação do relatório
+
+Perante o objetivo, ele será discutido nas subseções abaixo.
+
+## Variância
+
+  - Dado um conjunto de dados, a variância é uma medida de dispersão que mostra o quão distante cada valor desse conjunto está do valor central (médio)."
+
+  - Quanto menor é a variância, mais próximos os valores estão da média; mas quanto maior ela é, mais os valores estão distantes da média.
+  
+  - Considere que x1, x2, …, xn são os n elementos de uma amostra e que x é a média aritmética desses elementos. O cálculo da variância amostral é dado por:
+  
+  <center>
+  
+  $VA= \frac {(x1 - x)^2 + (x2 - x)^2 + (x3 - x)^2 + ...+ (xn - x)} {n - 1}$
+  
+  $σ^2=\frac {\sum (xi - x)^2}{n}$
+  
+  </center>
+  
+
+  - Se, em contrapartida, quisermos calcular a variância populacional, consideraremos todos os elementos da população, e não apenas de uma amostra. Nesse caso, o cálculo possui uma pequena diferença. Observe:
+
+  <center>
+  $VP = \frac { (x1 - x)^2 + (x2 - x)^2 + (x3 - x)^2 + ...+ (xn - x)} {n}$
+  
+  $s^2=\frac {\sum (xi - x)^2}{n-1}$
+  </center>
+  
+Essa fórmula representa a variância populacional e para encontrá-la:
+  
+  - Primeiramente, devemos calcular a média aritmética do conjunto;
+  - Em seguida, subtraímos de cada valor do conjunto a média calculada e elevamos o resultado ao quadrado;
+  - Por fim, somamos todos os valores e dividimos pelo número de dados
+
+## Variância no pacote leem 
+
+Na criação da função devemos utilizar argumentos e alguns deles servem para protege - la. São elas: 
+
+  - `details`: argumento utilizado para definir se há mais dados nos resultados além da variância. Usaremos `FALSE` quando queremos apenas a variância e `TRUE` quando queremos mostrar todos os dados da tabela `tabfreq`;
+  - `na.rm`: argumento utilizado para quando há resutados inválidos. Usamos `FALSE` indica que esses dados será evado em consideração;
+  - `rouding`: argumento núemrico que indicará a quantidade de casas decimais;
+  - `grouped`: argumento lógico utilizado em variáveis contínuas. 
+
+Dessa forma, a função variância utilizando o pacote `leem`será: 
+
+`variance <- function (x, rounding = 2, na.rm = FALSE, details = FALSE, grouped = TRUE)`
+
+Abaixo será mostrado a função e os argumentos utilizados:
+
+
+```
+{
+  if (class(x) != "leem") #verificando se o objeto da função tem classse leem
+    stop("Use the 'new_leem()' function to create an object of class leem!", 
+         call. = FALSE) 
+         
+  if (class(x) == "leem" & is.null(attr(x, "table"))) #determinando se a variável vem de tabfreq 
+    x <- tabfreq(x)
+    
+  if (attr(x, "variable") == "discrete") { #veriifcando se a variável é discreta
+    numchar <- is.numeric(x$estat$raw_data)
+    if (numchar) {
+      vari <- round(var(x = x$estat$raw_data, na.rm = na.rm), 
+                    digits = rounding)
+      resume <- list(variance = vari, table = x$tabela, 
+                     rawdata = x$estat$raw_data)
+                     
+      if (details) { #analisando se há detalhes 
+        return(resume)
+      }
+      else {
+        return(vari)
+      }
+    }
+    else {
+      stop("Measure not used for this data type!", 
+           call. = FALSE, domain = "R-leem")
+    }
+  }
+  if (attr(x, "variable") == "continuous") { #verificando se a variável é contínua
+  
+    if (grouped == TRUE) { #verificando se grouped é lógico
+      vari <- sum((x$tabela$PM - mean(x))^2 * x$tabela$Fi)/(x$estat$Numero_amostra - 
+                                                              1)
+      resume <- list(variance = vari, table = x$tabela, rawdata = x$estat$raw_data)
+      if (details) {
+        return(resume)
+      }
+      else {
+        return(vari)
+      }
+    } else {
+      vari <- round(var(x = x$estat$raw_data, na.rm = na.rm), 
+                    digits = rounding)
+      resume <- list(variance = vari, table = x$tabela, 
+                     rawdata = x$estat$raw_data)
+      if (details) {
+        return(resume)
+      }
+      else {
+        return(vari)
+      }
+      
+    }
+  }
+}
+
+
+
+```
