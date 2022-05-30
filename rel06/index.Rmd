@@ -76,15 +76,13 @@ Na criação da função devemos utilizar argumentos e alguns deles servem para 
   - `rouding`: argumento núemrico que indicará a quantidade de casas decimais;
   - `grouped`: argumento lógico utilizado em variáveis contínuas. 
 
-Dessa forma, a função variância utilizando o pacote `leem`será: 
+Dessa forma, a função variância utilizando o pacote `leem` será: `variance (x, rounding = 2, na.rm = FALSE, details = FALSE, grouped = TRUE)`.
 
-`variance <- function (x, rounding = 2, na.rm = FALSE, details = FALSE, grouped = TRUE)`
-
-Abaixo será mostrado a função e os argumentos utilizados:
+Abaixo será mostrado a função em detalhes: 
 
 
-```
-{
+```{r}
+variance <- function (x, rounding = 2, na.rm = FALSE, details = FALSE, grouped = TRUE) {
   if (class(x) != "leem") #verificando se o objeto da função tem classse leem
     stop("Use the 'new_leem()' function to create an object of class leem!", 
          call. = FALSE) 
@@ -138,7 +136,10 @@ Abaixo será mostrado a função e os argumentos utilizados:
       
     }
   }
+  
 }
+  
+
 
 
 
