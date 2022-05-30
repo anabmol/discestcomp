@@ -123,7 +123,7 @@ variance <- function (x, rounding = 2, na.rm = FALSE, details = FALSE, grouped =
         return(vari)
       }
     } else {
-      vari <- round(var(x = x$estat$raw_data, na.rm = na.rm), 
+      vari <- round(var(x = x$estat$raw_data, na.rm = na.rm), #considera valores não disponíveis 
                     digits = rounding)
       resume <- list(variance = vari, table = x$tabela, 
                      rawdata = x$estat$raw_data)
@@ -136,7 +136,6 @@ variance <- function (x, rounding = 2, na.rm = FALSE, details = FALSE, grouped =
       
     }
   }
-  
 }
   
 
