@@ -1,0 +1,119 @@
+---
+title: "Relatório 08"
+author: "Ana Bárbara Andrade Mól"
+date: "23/06/2022"
+header-includes:
+  - \usepackage{titling}
+  - \pretitle{\begin{center}
+    \includegraphics[width=2in,height=2in]{ufsj.png}\LARGE\\}
+  - \posttitle{\end{center}}
+toc-title: "Sumário"
+output:
+  
+  html_document:
+    theme: journal
+    highlight: tango
+    toc: yes
+    number_sections: yes
+    includes:
+      in_header: logo.html
+  pdf_document:
+    
+    toc: yes
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+--- 
+
+# Objetivo
+ Descrever o processo de criação de gráficos da estatística descritiva no pacote leem.
+ 
+# Apresentação do relatório
+Abaixo segue as características dos tipos de gráficos 
+
+# Gráficos na estatística descritiva
+
+## Stickplot 
+
+<center>
+![](Stickplot.png){width=50%}
+</center>
+
+O gráfico apresentado é do tipo (?).
+
+Para que ele seja acessado no pacote leem, utiliza-se o comando abaixo:
+```
+y |> new_leem(variable = "discrete") |> tabfreq() |> stickplot()
+
+```
+Os argumentos usados nessa função são: 
+
+  - `X`
+  - `bg = TRUE`
+  - `main = NULL`
+  - `xlab = NULL`
+  - `ylab = NULL`
+  - `panel.first = grid(col="white")`
+  - `bgcol = "gray"`
+  - `bgborder = NA`
+  - `lcol = "black"`
+  - `pccol = lcol,pty = 19`
+  - `pwd = 3`
+  - `lty = 1`
+  - `lwd = 2`
+
+## Ogive 
+
+<center>
+![](Ogive.png){width=50%}
+</center>
+
+Ogive é um tipo de gráfico de histogramas, parecido com o de barras. Porém, o cálculo exigido é feito pela área do retângulo representado no gráfico e representa dados quantitativos. Esses dados são agrupados em classes de frequência, de modo que é possível distinguir a forma, o ponto central e a variação da distribuição dos mesmos, além de amplitude e simetrai da distribuição. 
+
+No pacote leem, ele é acessado por tal comando:
+```
+y |> new_leem(variable = "discrete") |> tabfreq() |> ogive(bars = TRUE, decreasing = FALSE)
+
+```
+
+Abaixo segue os argumentos da função: 
+
+  - `X`
+  
+## Polygon
+
+<center>
+![](Polygon.png){width=50%}
+</center>
+
+Polygon é o tipo de gráfico representado por segmentos ou linhas, utilizado para mostrar o progresso de valores de uma variável no transcorrer do tempo. São indicados para representar sequências de dados em uma escala de tempo dividida em períodos iguais. 
+
+Seu comando é:
+```
+y |> new_leem(variable = "discrete") |> tabfreq() |> polyfreq(bars=FALSE)
+
+```
+Os argumentos utilizados são: 
+
+  - `X`
+
+## Bar plot 
+
+<center>
+![](Bar plot.png){width=50%}
+</center>
+
+Também conhecido como gráfico de colunas, ele aponta barras em tamanhos proporcionais aos valores que as representam. Além disso, demonstram dados de uma tabela de frequências referentes à uma variável qualitativa. Cada barra retangular mostra a frequência ou a frequência relativa da respectiva opção da variável.
+
+O comando aplicado ao gráfico é:
+```
+y |> new_leem(variable = "discrete") |> tabfreq() |> hist()
+
+```
+
+Para a função, utilizamos os seguintes argumentos:
+
+  - `X`
