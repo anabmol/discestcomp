@@ -32,7 +32,7 @@ knitr::opts_chunk$set(echo = TRUE)
  Descrever o processo de criação de gráficos da estatística descritiva no pacote leem.
  
 # Apresentação do relatório
-Abaixo segue as características dos tipos de gráficos 
+Abaixo seguem as características dos tipos de gráficos.
 
 # Gráficos na estatística descritiva
 
@@ -42,7 +42,7 @@ Abaixo segue as características dos tipos de gráficos
 ![](Stickplot.png){width=50%}
 </center>
 
-O gráfico apresentado é do tipo (?).
+O gráfico apresentado é do tipo hastes ou bastão e é bastante  usado para representar dados não agrupados em classes, o que normalmente ocorre com dados discretos. Sendo assim, neste caso não há perda de informação, pois os valores da variável aparecem individualmente, como contam na amostra.
 
 Para que ele seja acessado no pacote leem, utiliza-se o comando abaixo:
 ```
@@ -82,6 +82,19 @@ y |> new_leem(variable = "discrete") |> tabfreq() |> ogive(bars = TRUE, decreasi
 Abaixo segue os argumentos da função: 
 
   - `X`
+  - `decreasing = TRUE`
+  - `both = FALSE`
+  - `bars = FALSE`
+  - `histogram = FALSE`
+  - `bg = TRUE`
+  - `main = NULL`
+  - `xlab = NULL`
+  - `ylab = NULL`
+  - `panel.first = grid(col="white")`
+  - `bgcol = "gray"`
+  - `bgborder = NA`
+  - `barcol = "yellow"`
+  - `<...truncated...>`
   
 ## Polygon
 
@@ -99,7 +112,20 @@ y |> new_leem(variable = "discrete") |> tabfreq() |> polyfreq(bars=FALSE)
 Os argumentos utilizados são: 
 
   - `X`
-
+  - `type = "b"`
+  - `bars = TRUE`
+  - `bg = TRUE`
+  - `main = NULL`
+  - `xlab = NULL`
+  - `ylab = NULL`
+  - `panel.first = grid(col="white")`
+  - `gridcol = "lightgray"`
+  - `bgcol = "gray"`
+  - `bgborder = NA`
+  - `barcol = "yellow"`
+  - `barborder = "gray"`
+  - `<...truncated...>`
+  
 ## Bar plot 
 
 <center>
@@ -117,3 +143,12 @@ y |> new_leem(variable = "discrete") |> tabfreq() |> hist()
 Para a função, utilizamos os seguintes argumentos:
 
   - `X`
+  - `bg = TRUE`
+  - `main = NULL`
+  - `xlab = NULL`
+  - `ylab = NULL`
+  - `panel.first = grid(col="white")`
+  - `bgcol = "gray"`
+  - `bgborder = NA`
+  - `barcol = "yellow"`
+  - `barborder = "gray`
