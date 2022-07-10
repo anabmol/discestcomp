@@ -137,4 +137,4 @@ Relatórios desenvolvidos:
 - Relatório 07
   - [pois.R](rel07/pois.R)
 - [Relatório 08 (23/06/2022)](rel08/index.html){target="_black"}
-- [Relatório 09 (07/06/2022)](rel09/index.html){target="_black"}
+- [Relatório 09 (07/07/2022)](rel09/index.html){target="_black"}
